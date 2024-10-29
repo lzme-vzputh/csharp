@@ -25,7 +25,7 @@
 
 ---
 
-## 4. Hello World
+## 4. Hello VZPUTH!
    - Basic program to print "Hello, World!" to the console.
    ```csharp
    using System;
@@ -34,7 +34,8 @@
    {
        static void Main()
        {
-           Console.WriteLine("Hello, World!");
+            Console.WriteLine("I crush on you!"); // with new line
+            Console.Write("Mea Hg ><"); // without new line
        }
    }
    ```
@@ -44,9 +45,33 @@
 ## 5. Numeric Data Types
    - Overview of `int`, `double`, `float`, and `decimal`.
    ```csharp
-   int age = 30;
-   double height = 5.9;
-   decimal balance = 1000.75m;
+   int age = 20;
+Console.WriteLine("int\n"+age);
+Console.WriteLine(int.MaxValue);
+Console.WriteLine(int.MinValue);
+
+
+long bigNumber = 876533456L;
+Console.WriteLine("\n long\n" + bigNumber);
+Console.WriteLine(long.MaxValue);
+Console.WriteLine(long.MinValue);
+
+decimal money = 9000M;
+Console.WriteLine("\n decimal\n" + money);
+Console.WriteLine(decimal.MaxValue);
+Console.WriteLine(decimal.MinValue);
+
+//  float 
+
+float hight = 1.70F;
+Console.WriteLine("\n float\n"+hight);
+Console.WriteLine(float.MaxValue);
+Console.WriteLine(float.MinValue);
+
+double wight = 0.3455432D;
+Console.WriteLine("\n double\n"+wight);
+Console.WriteLine(double.MaxValue);
+Console.WriteLine(double.MinValue);
    ```
 
 ---
@@ -54,8 +79,14 @@
 ## 6. Text-Based Data Types
    - Using `string` and `char`.
    ```csharp
-   string greeting = "Hello!";
-   char initial = 'A';
+   string name = "vzputh";
+   char gender = 'M';
+
+   // for output we can use two option 
+
+   Console.WriteLine($"My name's {name}. Gender {gender}.");// C# Style 
+
+   Console.Write("My name's " +name+ " Gender:" + gender); // Java Style
    ```
 
 ---
@@ -63,8 +94,24 @@
 ## 7. Converting String to Numbers
    - Convert strings to integers or other numeric types.
    ```csharp
-   string input = "42";
-   int number = int.Parse(input);
+string textAge ="-500";
+Console.WriteLine(textAge);
+           
+int A =  Convert.ToInt32(textAge) + 600;
+Console.WriteLine(A);
+
+
+
+double pi = 3.6;
+int a = Convert.ToInt32(pi);
+int b = Convert.ToInt16(pi);
+Console.WriteLine(a);
+Console.WriteLine(b);
+
+
+string couple = "9.87653";
+float x = Convert.ToSingle( couple );
+Console.WriteLine(x); 
    ```
 
 ---
@@ -72,7 +119,15 @@
 ## 8. Boolean Data Type
    - `bool` type for true or false values.
    ```csharp
-   bool isRaining = false;
+   bool a = true,
+        b= false;
+   Console.WriteLine(a); //true
+   Console.WriteLine(b); //false
+// converted Boolean to Integer
+   int x = Convert.ToInt32(a),
+       y = Convert.ToInt32(b);
+   Console.WriteLine(x); // x=1
+   Console.WriteLine(y); // y=0
    ```
 
 ---
@@ -82,9 +137,32 @@
    - **Comparison operators**: `==`, `!=`, `<`, `>`
    - **Logical operators**: `&&`, `||`, `!`
    ```csharp
-   int x = 5;
-   int y = 10;
-   bool result = x < y;
+      int age = 20;  
+      Console.WriteLine(age);
+      age++;
+      Console.WriteLine(age); // age = 21
+      age--;
+      Console.WriteLine(age);// age = 20 
+
+      // now age = 20 we can use " age = age + 1" it's the same " age++"
+
+      age = age + 5; // age = 20 + 5
+      Console.WriteLine(age); 
+      age += 5; // age = 25 + 5
+      Console.WriteLine(age); 
+      // + - * / can use all
+
+      age /= 5;
+      Console.WriteLine(age);
+      // use in string
+
+      string name = "vzputh";
+      name += " is m'nus s'mos";
+      Console.WriteLine(name);
+      // in Char when sum it use unicode in alphabet
+      char ch = 'x';
+      ch += 'y'; //  ñ
+      Console.WriteLine(ch);
    ```
 
 ---
