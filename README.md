@@ -174,52 +174,47 @@ Console.WriteLine(x);
 
 ## 10. Remainder
    - Using the `%` operator to find remainders.
+   - ការចែកយកសំណល់
    ```csharp
-   int remainder = 10 % 3;
+   int num1 = 20,
+       num2 = 3;
+   int re = num1 % num2;
+   // 20 % 4 = 0
+   // note if 100 % 90 = 10 
+   // 1000 % 90 = 10
+   Console.WriteLine(re);
    ```
 
 ---
 
 ## 11. `var` Keyword
    - Implicit typing with `var`.
+   - we can use `var` keyword inferred as dataType `string` `int` `float`...
    ```csharp
-   var name = "Alice"; // inferred as string
-   var number = 123;   // inferred as int
+ 
+   var name = "vzputh"; // inferred as string
+   Console.WriteLine(name);
+   var sex = 'm';  // inferred as char
+   Console.WriteLine(sex);
+   var db = 5000D;
+   Console.WriteLine(db);
+   var lg = 4322344L;
+   Console.WriteLine(lg);
    ```
 
 ---
 
 ## 12. `const` Keyword
    - Declaring constants.
+   - we use `const` for lock value.
    ```csharp
    const double PI = 3.14159;
    ```
 
 ---
 
-## 13. Exercise - Storing User Data
-   - Collect and display user data.
-   ```csharp
-   string name = "John";
-   int age = 28;
-   Console.WriteLine($"Name: {name}, Age: {age}");
-   ```
 
----
-
-## 14. Exercise - Odd/Even Checker
-   - Determine if a number is odd or even.
-   ```csharp
-   int number = 4;
-   if (number % 2 == 0)
-       Console.WriteLine("Even");
-   else
-       Console.WriteLine("Odd");
-   ```
-
----
-
-## 15. Console Input/Output
+## 13. Console Input/Output
    - Use `Console.ReadLine()` and `Console.WriteLine()`.
    ```csharp
    Console.Write("Enter your name: ");
@@ -229,7 +224,7 @@ Console.WriteLine(x);
 
 ---
 
-## 16. If Statements
+## 14. If Statements
    - Conditional logic with `if`.
    ```csharp
    if (age > 18)
@@ -238,7 +233,7 @@ Console.WriteLine(x);
 
 ---
 
-## 17. Switch Statements
+## 15. Switch Statements
    - Switch-case structure.
    ```csharp
    int day = 3;
@@ -253,7 +248,7 @@ Console.WriteLine(x);
 
 ---
 
-## 18. For Loops
+## 16. For Loops
    - Looping a specified number of times.
    ```csharp
    for (int i = 0; i < 5; i++)
@@ -262,7 +257,7 @@ Console.WriteLine(x);
 
 ---
 
-## 19. While Loops
+## 17. While Loops
    - Loop while a condition is true.
    ```csharp
    int count = 0;
@@ -275,7 +270,7 @@ Console.WriteLine(x);
 
 ---
 
-## 20. Conditional Operator
+## 28. Conditional Operator
    - Using `?:` for inline conditionals.
    ```csharp
    int age = 18;
@@ -284,7 +279,7 @@ Console.WriteLine(x);
 
 ---
 
-## 21. Numeric Formatting
+## 19. Numeric Formatting
    - Format numbers as currency or percentage.
    ```csharp
    double price = 1234.5678;
@@ -293,7 +288,7 @@ Console.WriteLine(x);
 
 ---
 
-## 22. `TryParse` Function
+## 20. `TryParse` Function
    - Parse strings with error handling.
    ```csharp
    string input = "123";
@@ -303,31 +298,7 @@ Console.WriteLine(x);
 
 ---
 
-## 23. Exercise - Times Table
-   - Display a multiplication table.
-   ```csharp
-   int number = 5;
-   for (int i = 1; i <= 10; i++)
-       Console.WriteLine($"{number} x {i} = {number * i}");
-   ```
-
----
-
-## 24. Exercise - Fizz Buzz Game
-   - A classic programming exercise.
-   ```csharp
-   for (int i = 1; i <= 100; i++)
-   {
-       if (i % 3 == 0 && i % 5 == 0) Console.WriteLine("FizzBuzz");
-       else if (i % 3 == 0) Console.WriteLine("Fizz");
-       else if (i % 5 == 0) Console.WriteLine("Buzz");
-       else Console.WriteLine(i);
-   }
-   ```
-
----
-
-## 25. Verbatim String Literal
+## 21. Verbatim String Literal
    - Using `@` for multi-line and file path strings.
    ```csharp
    string path = @"C:\Users\Public\Documents";
@@ -335,7 +306,7 @@ Console.WriteLine(x);
 
 ---
 
-## 26. String Formatting
+## 22. String Formatting
    - Format strings with placeholders.
    ```csharp
    string name = "John";
@@ -345,7 +316,7 @@ Console.WriteLine(x);
 
 ---
 
-## 27. String Interpolation
+## 23. String Interpolation
    - Embed variables directly in strings.
    ```csharp
    string name = "Alice";
@@ -355,7 +326,7 @@ Console.WriteLine(x);
 
 ---
 
-## 28. String Concatenation
+## 24. String Concatenation
    - Concatenate strings using `+`.
    ```csharp
    string firstName = "John";
@@ -365,7 +336,7 @@ Console.WriteLine(x);
 
 ---
 
-## 29. Empty String
+## 25. Empty String
    - Declare empty strings.
    ```csharp
    string emptyString = "";
@@ -373,7 +344,7 @@ Console.WriteLine(x);
 
 ---
 
-## 30. String `Equals` Function
+## 26. String `Equals` Function
    - Compare strings for equality.
    ```csharp
    string str1 = "hello";
@@ -383,7 +354,7 @@ Console.WriteLine(x);
 
 ---
 
-## 31. String Iteration Looping
+## 27. String Iteration Looping
    - Iterate over each character in a string.
    ```csharp
    string word = "Hello";
@@ -393,7 +364,7 @@ Console.WriteLine(x);
 
 ---
 
-## 32. String `IsNullOrEmpty` Function
+## 28. String `IsNullOrEmpty` Function
    - Check if a string is null or empty.
    ```csharp
    string str = null;
@@ -403,27 +374,7 @@ Console.WriteLine(x);
 
 ---
 
-## 33. Exercise - Print String in Reverse
-   - Print each character in reverse order.
-   ```csharp
-   string input = "hello";
-   for (int i = input.Length - 1; i >= 0; i--)
-       Console.Write(input[i]);
-   ```
-
----
-
-## 34. Exercise - Password Checker
-   - Check if a password is at least 8 characters.
-   ```csharp
-   string password = "secret";
-   if (password.Length >= 8)
-       Console.WriteLine("Valid password");
-   ```
-
----
-
-## 35. Arrays
+## 29. Arrays
    - Declare and use arrays.
    ```csharp
    int[] numbers = { 1, 2, 3, 4, 5 };
@@ -431,7 +382,7 @@ Console.WriteLine(x);
 
 ---
 
-## 36. Array Sorting
+## 30. Array Sorting
    - Sort arrays.
    ```csharp
    int[] numbers = { 5, 2, 9, 1 };
@@ -440,7 +391,7 @@ Console.WriteLine(x);
 
 ---
 
-## 37. Array Reversal
+## 31. Array Reversal
    - Reverse the elements of an array.
    ```csharp
    Array.Reverse(numbers);
@@ -448,9 +399,7 @@ Console.WriteLine(x);
 
 ---
 
-## 38.
-
- Array Clearing
+## 32.Array Clearing
    - Set all elements to default values.
    ```csharp
    Array.Clear(numbers, 0, numbers.Length);
@@ -458,7 +407,7 @@ Console.WriteLine(x);
 
 ---
 
-## 39. Array `IndexOf`
+## 33. Array `IndexOf`
    - Find the index of a specific element.
    ```csharp
    int index = Array.IndexOf(numbers, 3);
@@ -466,7 +415,7 @@ Console.WriteLine(x);
 
 ---
 
-## 40. Lists
+## 34. Lists
    - Dynamic collections.
    ```csharp
    List<string> names = new List<string> { "Alice", "Bob" };
@@ -474,7 +423,7 @@ Console.WriteLine(x);
 
 ---
 
-## 41. Dictionary
+## 35. Dictionary
    - Key-value pairs.
    ```csharp
    Dictionary<string, int> ages = new Dictionary<string, int>
@@ -486,17 +435,7 @@ Console.WriteLine(x);
 
 ---
 
-## 42. Exercise - Odd/Even Number Split
-   - Separate odd and even numbers in a list.
-
----
-
-## 43. Exercise - Array of Multiples
-   - Generate an array with multiples of a number.
-
----
-
-## 44. Functions
+## 36. Functions
    - Define functions with return values.
    ```csharp
    static int Add(int a, int b) => a + b;
@@ -504,7 +443,7 @@ Console.WriteLine(x);
 
 ---
 
-## 45. Void Functions
+## 37. Void Functions
    - Functions that don't return a value.
    ```csharp
    static void PrintHello() => Console.WriteLine("Hello");
@@ -512,7 +451,7 @@ Console.WriteLine(x);
 
 ---
 
-## 46. Return Type Functions
+## 38. Return Type Functions
    - Functions with a specified return type.
    ```csharp
    static int Square(int x) => x * x;
@@ -520,7 +459,7 @@ Console.WriteLine(x);
 
 ---
 
-## 47. Function Parameters
+## 39. Function Parameters
    - Passing arguments to functions.
    ```csharp
    static int Add(int a, int b) => a + b;
@@ -528,7 +467,7 @@ Console.WriteLine(x);
 
 ---
 
-## 48. Optional Parameters
+## 40. Optional Parameters
    - Use default values for parameters.
    ```csharp
    static void Greet(string name = "Guest") => Console.WriteLine($"Hello, {name}");
@@ -536,7 +475,7 @@ Console.WriteLine(x);
 
 ---
 
-## 49. Named Parameters
+## 41. Named Parameters
    - Explicitly name parameters in function calls.
    ```csharp
    Greet(name: "Alice");
@@ -544,7 +483,7 @@ Console.WriteLine(x);
 
 ---
 
-## 50. Out Parameters
+## 42. Out Parameters
    - Passing parameters with `out`.
    ```csharp
    static bool TryParse(string s, out int number) => int.TryParse(s, out number);
@@ -552,7 +491,7 @@ Console.WriteLine(x);
 
 ---
 
-## 51. Reference Parameters
+## 43. Reference Parameters
    - Using `ref` to pass parameters by reference.
    ```csharp
    static void Increment(ref int x) => x++;
@@ -560,20 +499,7 @@ Console.WriteLine(x);
 
 ---
 
-## 52. Exercise - Area of a Triangle
-   - Calculate the area of a triangle.
-   ```csharp
-   static double Area(double b, double h) => 0.5 * b * h;
-   ```
-
----
-
-## 53. Exercise - Sum of int Array
-   - Sum elements in an array.
-
----
-
-## 54. Exception Handling
+## 44. Exception Handling
    - Handling errors with try-catch.
    ```csharp
    try { int.Parse("abc"); }
@@ -582,12 +508,12 @@ Console.WriteLine(x);
 
 ---
 
-## 55. Try…catch
+## 45. Try…catch
    - Basic try-catch for handling exceptions.
 
 ---
 
-## 56. Printing Error Messages
+## 46. Printing Error Messages
    - Print exception messages.
    ```csharp
    try { int.Parse("abc"); }
@@ -595,33 +521,22 @@ Console.WriteLine(x);
    ```
 
 ---
-
-## 57. Exercise - Custom TryParse
-   - Create a custom TryParse function.
-
----
-
-## 58. Debugging
+## 47. Debugging
    - Using breakpoints and stepping through code.
 
 ---
 
-## 59. Local/Auto Window
+## 48. Local/Auto Window
    - Viewing local variables in debug mode.
 
 ---
 
-## 60. Watch Window
+## 49. Watch Window
    - Tracking specific variables during debugging.
 
 ---
 
-## 61. Exercise - Fix Logic Error
-   - Debugging exercises to fix common errors.
-
----
-
-## 62. Structures
+## 50. Structures
    - Define a struct with fields.
    ```csharp
    struct Point { public int X; public int Y; }
@@ -629,7 +544,7 @@ Console.WriteLine(x);
 
 ---
 
-## 63. Classes
+## 51. Classes
    - Define a class with properties and methods.
    ```csharp
    class Person { public string Name; }
@@ -637,22 +552,22 @@ Console.WriteLine(x);
 
 ---
 
-## 64. Class Functions
+## 52. Class Functions
    - Methods defined in a class.
 
 ---
 
-## 65. Class Fields
+## 53. Class Fields
    - Define class-level variables.
 
 ---
 
-## 66. Class Variable/Function Scope
+## 54. Class Variable/Function Scope
    - Define public and private members.
 
 ---
 
-## 67. Class Properties
+## 55. Class Properties
    - Encapsulate fields with properties.
    ```csharp
    class Person { public string Name { get; set; } }
@@ -660,7 +575,7 @@ Console.WriteLine(x);
 
 ---
 
-## 68. Class ToString Function Override
+## 56. Class ToString Function Override
    - Override `ToString()` for custom output.
    ```csharp
    class Person { public override string ToString() => "Person"; }
