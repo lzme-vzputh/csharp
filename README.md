@@ -215,12 +215,38 @@ Console.WriteLine(x);
 
 
 ## 13. Console Input/Output
-   - Use `Console.ReadLine()` and `Console.WriteLine()`.
+   - Use `Console.ReadLine()` for `Input` and `Console.WriteLine()` for `Output`
+   - `Console.ReadLine()` work only `string` and `char`
+   - If for other numeric types we need Convert strings to integers or other numeric types or `Convert.To'...'(Console.ReadLine())`
+#### 1.Convert `ageInput`
    ```csharp
-   Console.Write("Enter your name: ");
+   Console.Write("Enter your name:");
    string name = Console.ReadLine();
-   Console.WriteLine($"Hello, {name}!");
+
+   Console.Write("Enter your age:");
+   string ageInput = Console.ReadLine();
+   int age = Convert.ToInt32(ageInput);
+
+   Console.WriteLine($"My name's {name},I'm {age} year old.");
    ```
+#### 2.Fast
+   ```csharp 
+   Console.Write("Enter your name:");
+   string name = Console.ReadLine();
+
+   Console.Write("Enter your age:");
+   int age = Convert.ToInt32(Console.ReadLine());
+
+   Console.WriteLine($"My name's {name},I'm {age} year old.");
+   ```
+#### 
+   ```csharp
+   string ageInput = Console.ReadLine();
+   int age = Convert.ToInt32(ageInput);
+   // Is the same.
+   int age = Convert.ToInt32(Console.ReadLine());
+   ```
+
 
 ---
 
