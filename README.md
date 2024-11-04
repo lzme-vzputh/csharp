@@ -297,7 +297,7 @@ Console.WriteLine(x);
 ---
 
 ## 28. Conditional Operator
-   - Using `?:` for inline conditionals.
+   - Using `condition ? "true" : "false"`   for inline conditionals.
    ```csharp
    int age = 18;
    string result = (age >= 18) ? "Adult" : "Minor";
@@ -308,8 +308,16 @@ Console.WriteLine(x);
 ## 19. Numeric Formatting
    - Format numbers as currency or percentage.
    ```csharp
-   double price = 1234.5678;
-   Console.WriteLine(price.ToString("C")); // Currency
+   // string.format only numeric
+
+double price = 10D / 3D;
+Console.WriteLine(string.Format("{3} {0}  {1}   {0}   {2}​",price,99,12,25));// by array
+
+Console.WriteLine(string.Format("...{0:0}", price));
+Console.WriteLine(string.Format("...{0:0.0}",price));
+Console.WriteLine(string.Format("{0:0.00}", price));
+Console.WriteLine(string.Format("{0:0.000}",price));
+Console.WriteLine(string.Format("{0:0.#}", price));
    ```
 
 ---
