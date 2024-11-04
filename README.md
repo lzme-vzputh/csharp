@@ -319,6 +319,25 @@ Console.WriteLine(string.Format("{0:0.00}", price));
 Console.WriteLine(string.Format("{0:0.000}",price));
 Console.WriteLine(string.Format("{0:0.#}", price));
    ```
+```csharp
+//Console.WriteLine(money.ToString("C")); can use only "C" keyword c= currency
+
+double price = 10D / 3D;
+Console.WriteLine(string.Format("$10 / $3 = ${0:0.00}", money));
+Console.WriteLine(money.ToString("C")); //$3.33
+Console.WriteLine(money.ToString("C1"));//$3.3
+Console.WriteLine(money.ToString("C2"));//$3.33
+Console.WriteLine(money.ToString("C3"));//$3.333
+Console.WriteLine(money.ToString("C4"));//$3.3333
+```
+```csharp
+   Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-GB"))); £
+   Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));  $
+   Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-TH")));   THB
+   Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-KH")));   KHR
+   Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-KR")));   ₩
+   Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-JP")));   ¥
+```
 
 ---
 
